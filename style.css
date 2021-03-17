@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* This styling is mobile first approach */
+
+#top-desktop-img {
+  display: none;
+}
+
+/* styling title section */
+.title {
+  width: 90%;
+  max-width: 690px;
+  margin: -140px auto 2rem auto;
+  text-align: center;
+  margin-top: -140px;
+  line-height: 1.2;
+}
+
+.title p:nth-child(1) {
+  color: #502050;
+  font-weight: 800;
+  font-size: 29px;
+  margin: 0 auto;
+}
+
+.title p:nth-child(2) {
+  margin-top: 1.5rem;
+}
+
+/* styling ratings section */
+.ratings {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.each-rating {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F7F2F7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.each-rating img {
+  padding: 3px;
+}
+
+.each-rating p {
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #502050;
+}
+
+/* styling testimonials section */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buyers {
+  background-color: #502050;
+  width: 80%;
+  height: 230px;
+  margin: 1.5rem auto;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.buyers img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.buyer-info {
+  width: 200px;
+  position: absolute;
+  left: 80px;
+  top: 20px;
+}
+
+.names {
+  color: aliceblue;
+  font-size: 13px;
+}
+
+.buyer {
+  color: #fc54fc;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+.quote {
+  color: aliceblue;
+  margin-top: 15px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.buyers:nth-child(3) .quote {
+  margin-top: 20px;
+}
+
+/* styling footer section */
+.attribution {
+  display: flex;
+  flex-basis: 80%;
+  max-width: 800px;
+  justify-content: space-evenly;
+  font-size: 13px;
+  margin: 1rem auto;
+}
+
+@media only screen and (min-width: 700px){
+
+  #top-mobile-img {
+    display: none;
+  }  
+
+  #top-desktop-img {
+    display: inline;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 1rem;
+    margin-top: -140px;
+  }
+
+  .ratings {
+    margin-top: -140px;
+  }
+
+  .title {
+    margin-left: 2.5rem;
+    text-align: left;
+  }
+
+  .title p:nth-child(1){
+    font-size: 35px;
+  }
+
+  .title p:nth-child(2) {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .ratings {
+    display: grid;
+    margin-right: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .each-rating {
+    display: flex;
+    justify-content: baseline;
+  }
+
+  .each-rating:nth-child(1) {
+    margin-left: 8px;
+  }
+
+  .each-rating:nth-child(2) {
+    margin-left: 24px;
+  }
+
+  .each-rating:nth-child(3) {
+    margin-left: 45px;
+  }
+
+  .stars {
+    justify-self: flex-start;
+    padding-top: 10px;
+  }
+
+  .each-rating p {
+    padding-left: 10px;
+    padding-top: 16px;
+    font-size: 13px;
+  }
+
+  .testimonials {
+    margin-top: 3rem;
+    flex-direction: row;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+  .buyers:nth-child(2) {
+    margin-top: 50px;
+  }
+
+  .buyers:nth-child(3) {
+    margin-top: 80px;
+  }
+
+}
+
+@media only screen and(min-width: 1080px){
+
+  .title p:nth-child(2) {
+    font-size: 24px;
+  }
+}
